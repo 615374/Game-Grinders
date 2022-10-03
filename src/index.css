@@ -28,13 +28,27 @@ h2 {
   align-items: center;
   color: greenyellow;
   font-family: 'Silkscreen', cursive;
-  font-size: medium;
-  align-items: center;
-  
+  font-size:large;
+  margin-left: 35%;  
+}
+
+.padre-transform{
+  height: 100vh;
+  min-height:600px;
+}
+
+.padre-transform > div{
+  position: absolute;
+  top:18%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 50%;
+  text-align: center;
 }
 
 img{
   cursor: pointer;
+  filter: drop-shadow(0 0 0.80rem rgb(81, 255, 0));
 }
 
 img:hover {
@@ -49,6 +63,7 @@ img:focus {
 
 button{
   cursor: pointer;
+  margin-right: 20%;
 }
 
 #boton-carrito {

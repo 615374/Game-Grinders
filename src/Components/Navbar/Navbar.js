@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Assets/logo.jpeg';
+import logo from '../../Assets/logo.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {style} from './Navbar.style'
 
@@ -15,6 +15,8 @@ const Navbar = ({children}) => {
     return (
     <header style={style.container}>
         <img style={style.imagenes} src={logo} alt="tienda online" />
+        <div class="padre-transform">
+        <div>
         <h1 id="titulo" >Bienvenidos a Game Grinders</h1>
         <h2 id="titulo">Impresiones 3D</h2>
         <nav id="categorias">
@@ -26,6 +28,8 @@ const Navbar = ({children}) => {
             }
             
         </nav>
+        </div>
+        </div>
 
         
         
