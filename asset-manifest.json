@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/game-grinders/static/css/main.6ca40289.css",
-    "main.js": "/game-grinders/static/js/main.67726b6e.js",
-    "static/media/logo.jpeg": "/game-grinders/static/media/logo.4486a0c32835b96b2e6a.jpeg",
+    "main.css": "/game-grinders/static/css/main.7e2fc833.css",
+    "main.js": "/game-grinders/static/js/main.0e276558.js",
+    "static/media/logo.png": "/game-grinders/static/media/logo.4f90a75612e424265f8e.png",
     "index.html": "/game-grinders/index.html",
-    "main.6ca40289.css.map": "/game-grinders/static/css/main.6ca40289.css.map",
-    "main.67726b6e.js.map": "/game-grinders/static/js/main.67726b6e.js.map"
+    "main.7e2fc833.css.map": "/game-grinders/static/css/main.7e2fc833.css.map",
+    "main.0e276558.js.map": "/game-grinders/static/js/main.0e276558.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ca40289.css",
-    "static/js/main.67726b6e.js"
+    "static/css/main.7e2fc833.css",
+    "static/js/main.0e276558.js"
   ]
 }
