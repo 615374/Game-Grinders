@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/game-grinders/static/css/main.6ca40289.css",
+    "main.js": "/game-grinders/static/js/main.67726b6e.js",
+    "static/media/logo.jpeg": "/game-grinders/static/media/logo.4486a0c32835b96b2e6a.jpeg",
+    "index.html": "/game-grinders/index.html",
+    "main.6ca40289.css.map": "/game-grinders/static/css/main.6ca40289.css.map",
+    "main.67726b6e.js.map": "/game-grinders/static/js/main.67726b6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ca40289.css",
+    "static/js/main.67726b6e.js"
+  ]
+}
