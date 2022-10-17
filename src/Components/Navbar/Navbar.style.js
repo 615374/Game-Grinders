@@ -9,15 +9,11 @@ export const style = {
     },
 
     imagenes: { 
-        height:"170%",
+        height:"280%",
         marginLeft: "-7%",
    
     },
 
-    categorias: {
-        margin: 10,
-        color: "white",
-        display: "inline-block",    
-    },
 
 };
+

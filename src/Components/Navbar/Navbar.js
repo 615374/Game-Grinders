@@ -1,16 +1,15 @@
 import React from 'react';
 import logo from '../../Assets/logo.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import BlurCircularRoundedIcon from '@mui/icons-material/BlurCircularRounded';
+import KeyRoundedIcon from '@mui/icons-material/KeyRounded';
+import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
+import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
 import {style} from './Navbar.style'
 
-const Navbar = ({children}) => {
 
-    const categorias = [
-        {nombre:"LLaveros", id:0, ruta:"#"},
-        {nombre:"Picadores", id:1, ruta:"#"},
-        {nombre:"Tuqueros", id:2, ruta:"#"},
-        {nombre:"Kits", id:3, ruta:"#"},
-    ];
+
+const Navbar = () => {
 
     return (
     <header style={style.container}>
@@ -19,30 +18,70 @@ const Navbar = ({children}) => {
         <div>
         <h1 id="titulo" >Bienvenidos a Game Grinders</h1>
         <h2 id="titulo">Impresiones 3D</h2>
-        <nav id="categorias">
-
-            {
-                categorias.map((categoria)=>{
-                    return <a key={categoria.id} style={style.categorias} href={categoria.ruta}>{categoria.nombre}</a>
-                })
-            }
-            
+       
+        <nav>
+            <div class= "categorias" >
+                    <ul>
+                        
+                        <li class= "categorias"><a href="#">
+                            <div class="wrap">
+                                <span class="icon">
+                                  <KeyRoundedIcon/>  
+                                </span>
+                                <span class="text">LLaveros</span>
+                            </div>
+                        </a></li>
+                        <li class= "categorias"><a href="#">
+                            <div class="wrap">
+                                <span class="icon">
+                                 <BlurCircularRoundedIcon/>    
+                                </span>
+                                <span class="text">Picadores</span>
+                            </div>
+                        </a></li>
+                        <li class= "categorias"><a href="#">
+                            <div class="wrap">
+                                <span class="icon">
+                                 <AutoFixHighRoundedIcon/>
+                                </span>
+                                <span class="text">Tuqueros</span>
+                            </div>
+                        </a></li>
+                        <li class= "categorias"><a href="#">
+                            <div class="wrap">
+                                <span class="icon">
+                                  <ShoppingBagRoundedIcon/>  
+                                </span>
+                                <span class="text">Kits</span>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                        
         </nav>
-        </div>
-        </div>
+        
+       
+    </div>
+    </div>   
 
-        
-        
-        <button id="boton-carrito">
+    <button id="boton-carrito">
         <ShoppingCartIcon color="inherit" fontSize="large"/>
         </button>
+   
+
+
+
     </header>
+    
    
    );
-
 };
-
 export default Navbar;
+
+
+
+
+
 
 
 
