@@ -9,8 +9,9 @@ export const style = {
     },
 
     imagenes: { 
-        height:"280%",
+        height:"170%",
         marginLeft: "-7%",
+        marginTop:"-5%",
    
     },
 

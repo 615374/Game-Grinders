@@ -5,7 +5,8 @@ import BlurCircularRoundedIcon from '@mui/icons-material/BlurCircularRounded';
 import KeyRoundedIcon from '@mui/icons-material/KeyRounded';
 import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
 import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-import {style} from './Navbar.style'
+import { style } from './Navbar.style';
+import { Link } from "react-router-dom";
 
 
 
@@ -13,63 +14,66 @@ const Navbar = () => {
 
     return (
     <header style={style.container}>
+        <Link style={style.imagenes} to="/">
         <img style={style.imagenes} src={logo} alt="tienda online" />
-        <div class="padre-transform">
+        </Link>
+
+        <div className='padre-transform'>
         <div>
         <h1 id="titulo" >Bienvenidos a Game Grinders</h1>
         <h2 id="titulo">Impresiones 3D</h2>
        
         <nav>
-            <div class= "categorias" >
+            <div className='categorias'>
                     <ul>
                         
-                        <li class= "categorias"><a href="#">
-                            <div class="wrap">
-                                <span class="icon">
+                        <li className='categorias'><Link to="/categoria/llaveros" className='a_parent'>
+                            <div className='wrap'>
+                                <span className='icon'>
                                   <KeyRoundedIcon/>  
                                 </span>
-                                <span class="text">LLaveros</span>
+                                <span className='text'>LLaveros</span>
                             </div>
-                        </a></li>
-                        <li class= "categorias"><a href="#">
-                            <div class="wrap">
-                                <span class="icon">
+                        </Link></li>
+                        <li className='categorias'><Link to="/categoria/picadores" className='a_parent'>
+                            <div className='wrap'>
+                                <span className='icon'>
                                  <BlurCircularRoundedIcon/>    
                                 </span>
-                                <span class="text">Picadores</span>
+                                <span className='text'>Picadores</span>
                             </div>
-                        </a></li>
-                        <li class= "categorias"><a href="#">
-                            <div class="wrap">
-                                <span class="icon">
+                        </Link></li>
+                        <li className='categorias'><Link to="/categoria/tuqueros" className='a_parent'>
+                            <div className='wrap'>
+                                <span className='icon'>
                                  <AutoFixHighRoundedIcon/>
                                 </span>
-                                <span class="text">Tuqueros</span>
+                                <span className='text'>Tuqueros</span>
                             </div>
-                        </a></li>
-                        <li class= "categorias"><a href="#">
-                            <div class="wrap">
-                                <span class="icon">
+                        </Link></li>
+                        <li className='categorias'><Link to="/categoria/kits" className='a_parent'>
+                            <div className='wrap'>
+                                <span className='icon'>
                                   <ShoppingBagRoundedIcon/>  
                                 </span>
-                                <span class="text">Kits</span>
+                                <span className='text'>Kits</span>
                             </div>
-                        </a></li>
+                        </Link></li>
                     </ul>
                 </div>
                         
         </nav>
+
         
        
     </div>
     </div>   
 
+    <Link to="/cart">
     <button id="boton-carrito">
         <ShoppingCartIcon color="inherit" fontSize="large"/>
-        </button>
-   
-
-
+    </button>
+    </Link>
 
     </header>
     
