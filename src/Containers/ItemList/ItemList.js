@@ -1,4 +1,3 @@
-
 export const stockProductos = [
   
     {
@@ -126,7 +125,7 @@ export const stockProductos = [
     },
 
     {
-        nombre:"Kit 5", 
+        nombre:"Kit 4", 
         id:15, 
         categoria:"(llavero + picador + tuquero + armador + papelillos)", 
         stock:10, 
@@ -135,4 +134,3 @@ export const stockProductos = [
     },
     
 ];
-
