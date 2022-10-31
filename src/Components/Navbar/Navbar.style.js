@@ -1,3 +1,5 @@
+import { margin } from "@mui/system";
+
 export const style = {
     container:{
     backgroundColor: "black",
@@ -9,11 +11,23 @@ export const style = {
     },
 
     imagenes: { 
-        height:"170%",
-        marginLeft: "-7%",
-        marginTop:"-5%",
+     height:"170%",
+     marginLeft: "-7%",
+     marginTop:"-5%",
    
     },
+
+     categorias: {
+     display: "flex",
+     marginTop: "5px",
+     textAlign: "center",
+     letterSpacing: "2px",
+     borderRadius: "5px",
+     justifyContent:"space-between",
+     backgroundColor:"rgb(58, 57, 57)",
+     
+    }
+
 
 
 };

@@ -10,6 +10,7 @@ export const ItemListContainer = ({ greeting }) => {
   const {algo} = useParams();
   console.log(algo);
 
+
   const products = stockProductos.map(product =>(
     <Card key={product.id} {...product} />  
    ))
