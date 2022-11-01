@@ -18,22 +18,22 @@ export const ItemListContainer = ({ greeting }) => {
 
   useEffect(() => {
   promesa.then((response)=> {
-   if (Id){
-     const productsFiltered=response.filtered(elm=>elm.categoria===categoryId)
+   if (id){
+     const productsFiltered=response.filtered(elm=>elm.categoria===id)
      setProductos(productsFiltered);
     }else{
       setProductos(response)
     }
   })
-  },[categoryId]) 
+  },[id]) 
 
   
   const products = stockProductos.map(product =>(
     <Card key={product.id} {...product} />  
    ))
-
-   
-
+  
+  
+  
   return(
     <>
      
@@ -43,6 +43,4 @@ export const ItemListContainer = ({ greeting }) => {
     
   );
 };
-
-
 
