@@ -93,7 +93,7 @@ export const stockProductos = [
     {
         nombre:"Kit 1", 
         id:11, 
-        categoria:"(llavero + picador)", 
+        categoria:"kits", 
         stock:10, 
         precio:6000, 
         img: "https://i.ibb.co/YNtwrzx/Whats-App-Image-2022-10-30-at-17-51-56.jpg"
@@ -102,7 +102,7 @@ export const stockProductos = [
     {
         nombre:"Kit 2", 
         id:12, 
-        categoria:"(llavero + picador + tuquero)", 
+        categoria:"kits", 
         stock:10, 
         precio:6350, 
         img: "https://i.ibb.co/YNtwrzx/Whats-App-Image-2022-10-30-at-17-51-56.jpg"
@@ -111,7 +111,7 @@ export const stockProductos = [
     {
         nombre:"Kit 3", 
         id:13, 
-        categoria:"(llavero + picador + tuquero + papelillos)", 
+        categoria:"kits", 
         stock:10, 
         precio:6500, 
         img: "https://i.ibb.co/YNtwrzx/Whats-App-Image-2022-10-30-at-17-51-56.jpg"
@@ -120,7 +120,7 @@ export const stockProductos = [
     {
         nombre:"Kit 4", 
         id:14, 
-        categoria:"(llavero + picador + tuquero + armador + papelillos)", 
+        categoria:"kits", 
         stock:10, 
         precio:8300, 
         img: "https://i.ibb.co/YNtwrzx/Whats-App-Image-2022-10-30-at-17-51-56.jpg"

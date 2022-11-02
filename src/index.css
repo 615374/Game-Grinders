@@ -37,9 +37,9 @@ h2 {
   align-items: center;
   color: greenyellow;
   font-family: 'Silkscreen', cursive;
-  font-size:large;
+  font-size:medium;
   margin-left: 35%;
-  margin-top: -10px;  
+  margin-top: -22px;  
 }
 
 .padre-transform{
@@ -219,7 +219,7 @@ h3{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 75px;
+  margin-top: 90px;
   
 }
 

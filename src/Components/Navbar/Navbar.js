@@ -17,14 +17,16 @@ const Navbar = () => {
 
     return (
     <header style={style.container}>
-        <Link style={style.imagenes} to="/">
+        <Link style={style.imagenes} to="/home">
         <img style={style.imagenes} src={logo} alt="tienda online" />
         </Link>
 
         <div className='padre-transform'>
         <div>
+        <Link to="/home">  
         <h1 id="titulo" >Bienvenidos a Game Grinders</h1>
         <h2 id="titulo">Impresiones 3D</h2>
+        </Link> 
        
         <nav className='categorias'>
         {
