@@ -1,44 +1,48 @@
+
 import React, { useEffect, useState } from "react";
-import { stockProductos } from "../ItemList/ItemList";
 import Card from "../CardView/Card";
 import { useParams } from "react-router-dom";
-
-
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { db } from "../../Firebase/firebase";
 
 export const ItemListContainer = ({ greeting }) => {
 
-
   const { categoria } = useParams();
   const [productos, setProductos] = useState([])
-  const promesa = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(stockProductos);
-    }, 2000);
-  })
+  const [loading, setLoading] = useState(true);
+  
+  const productCollection = collection(db, "productos");
 
+  var q = query(productCollection)
+
+  if(categoria){
+    q = query(productCollection, where('categoria', '==', categoria ))
+  }
+  
   useEffect(() => {
-    promesa.then((response) => {
-      if (categoria) {
-        const productsFiltered = response.filter(elm => elm.categoria === categoria)
-        setProductos(productsFiltered);
-        console.log(productsFiltered);
-      } else {
-        setProductos(response)
-      }
+    getDocs(q)
+    .then((result) => {
+      const listaProductos = result.docs.map((item) => {
+        return {
+          ...item.data(),
+          id: item.id,
+        };
+      });
+      setProductos(listaProductos);
     })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoria])
+    .catch((error) => {
+      console.log(error);
+    })
+    .finally(setLoading(false));
+  }, [categoria, q ]);
 
-  const products = productos.map(product => (
-    <Card key={product.id} {...product} />
+  const products = productos.map(item => (
+    <Card key={item.id} {...item} />
   ))
 
   return (
     <>
-
       <div className="contenedor-productos">{products}</div>
-
     </>
-
   );
 };

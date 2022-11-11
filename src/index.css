@@ -116,6 +116,8 @@ button{
   font-weight: 700;
   padding: 3px;
   margin-left: 65px;
+  margin-top: 10px;
+  margin-bottom: -30px;
 }
 
 #titulo:focus {
@@ -133,10 +135,11 @@ header {
 }
 
 .botones-add-remove-cached{
-  display: flex;
+  
   justify-content: center;
   align-items: center;
-  margin-inline: 5px; 
+  margin-inline: -10px;
+  margin-left: 25px;  
   
 }
 
@@ -144,8 +147,8 @@ header {
   display: flex;
   align-items: center;
   font-size: larger;
-  margin-left: 55px;
-  margin-top: 50px;
+  justify-content: center;
+  margin-right: 30px;
 }
 
 .categorias{

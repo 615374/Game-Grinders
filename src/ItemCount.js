@@ -14,8 +14,9 @@ export const ItemCount = ({stock, initial, onAdd}) => {
 
 
     const handlerClickSumar = () =>{
-        
+        if( contador < stock){
         setContador (contador + 1);
+        }
     };
 
     const handlerClickRestar = () =>{
@@ -28,6 +29,11 @@ export const ItemCount = ({stock, initial, onAdd}) => {
         setContador (1);
         onAdd()
     };
+
+    /*const addToCart = ()=>{
+        console.log(`El usuario quiere agregar ${contador} productos al carrito`);
+    
+    }*/
 
 
     return (

@@ -1,5 +1,11 @@
+//import { Link } from "@mui/material";
 import React from "react";
+import { ItemCount } from "../../ItemCount";
 
+
+export const onAdd = (contador) => {
+    console.log("agregaste", contador);
+}
 
 const Card = ({nombre, precio, categoria, img}) => {
     return (
@@ -11,15 +17,10 @@ const Card = ({nombre, precio, categoria, img}) => {
             <p>{categoria}</p>
             <p className="precioProducto">Precio:$ {precio}</p>
             <button className="boton-agregar">Agregar<i class="fas fa-shopping-cart"></i></button>
-            <div>
-            <p className="contar" id="numero">0</p>
+            <div className="botones-add-remove-cached" > 
+            <ItemCount stock={10} initial ={1} onAdd={onAdd}/>   
             </div>
-            <div className="botones-add-remove-cached">
-            <button className="incr" id="sumar"><span class="material-symbols-rounded">add</span></button>
-            <button className="decr" id="restar"><span class="material-symbols-rounded">remove</span></button>
-            <button className="reset" id="reset"><span class="material-symbols-rounded">cached</span></button>
-            </div>
-            
+           
         </div>
     );
 };
